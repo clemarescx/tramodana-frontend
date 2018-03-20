@@ -11,7 +11,7 @@ class App extends Component {
         this.state ={
             changeCount: 0,
             fileLoaded: false,
-            file: null
+            fileContent: null
         };
     }
 
@@ -19,7 +19,7 @@ class App extends Component {
     render() {
         console.log(`fileLoaded:${this.state.fileLoaded} `);
         const flowview = this.state.fileLoaded ?
-            (<FlowView diagram={this.state.file}/>) :
+            (<FlowView diagram={this.state.fileContent} containerId="canvas"/>):
             (<p>No file loaded</p>);
 
         return (<div className="App">
@@ -30,7 +30,7 @@ class App extends Component {
             <p className="App-intro">
                 To get started, edit <code>src/App.js</code> and save to reload.
             </p>
-            <input type="file" id="file_opener" ref="fileOpener" onChange={this.openFile} />
+            <input type="file" id="file_opener" ref="fileOpener" onChange={this.openFile}/>
             {flowview}
         </div>);
     }
@@ -42,15 +42,16 @@ class App extends Component {
         reader.onload = () => {
             let newState = this.state;
             const text = reader.result;
-            if (text) {
-                console.log('File content loaded');
-                newState.file = text;
-                newState.fileLoaded = true;
-            } else {
-                newState.fileLoaded = false;
-            }
+           if(text){
+            console.log('File content loaded: ');
+            console.log( text.substring(0, 50) );
+            newState.fileContent = text;
+            newState.fileLoaded = true;
+           } else {
+               newState.fileLoaded = false;
+           }
 
-            newState.changeCount++;
+           newState.changeCount++;
             this.setState(newState);
         };
 
