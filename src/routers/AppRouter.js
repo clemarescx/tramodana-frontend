@@ -9,7 +9,7 @@ import PublicRoute from './PublicRoute';
 import Contact from '../components/Contact';
 import Support from '../components/Support';
 import Team from '../components/Team';
-import Upload from '../components/Upload';
+import FlowView from '../components/FlowView';
 
 export const history = createHistory();
 
@@ -21,8 +21,8 @@ const AppRouter = () => (
         <PrivateRoute path="/dashboard" component={DashboardPage} />
         <PrivateRoute path="/contact" component={Contact} />
         <PrivateRoute path="/support" component={Support} />
-        <PrivateRoute path="/Team" component={Team} />
-        <PrivateRoute path="/Upload" component={Upload} />
+        <PrivateRoute path="/team" component={Team} />
+        <PrivateRoute path="/flowview" component={FlowView} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

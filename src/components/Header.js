@@ -10,7 +10,7 @@ export const Header = ({ startLogout }) => (
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/support">Support</NavLink>
         <NavLink to="/team">Team</NavLink>
-        <NavLink to="/upload">Upload</NavLink>
+        <NavLink to="/flowview">Flow View</NavLink>
         <Link className="header__title" to="/dashboard">
           <h1>Boilerplate</h1>
         </Link>

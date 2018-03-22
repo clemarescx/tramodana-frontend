@@ -36,7 +36,6 @@ class App extends Component {
     }
 
     openFile(e) {
-
         const reader = new FileReader();
 
         reader.onload = () => {
