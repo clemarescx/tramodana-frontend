@@ -1,0 +1,71 @@
+h1 {
+  color:  #78D4F3;
+}
+
+body {
+  background:  #2C2F37;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+p, h3 {
+  color: #FBFBFC;
+}
+
+.nav-link {
+  color:  #FBFBFC;
+}
+
+.navbar-brand {
+  font-size: 55px;
+  font-weight: bold; 
+}
+
+.jumbotron {
+  background-color: #2C2F37;
+}
+
+.navbar-light .navbar-brand {
+  color: #78D4F3;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #78D4F3;
+}
+
+.card-title {
+  color: black;
+}
+
+.card-text {
+  color: black;
+}
+
+.card {
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.btn-danger {
+  background-color: #FB674A 
+}
+
+.nav-link:hover {
+  color: #FB674A;
+  font-weight: bold;
+}
+
+.icon-checkmark {
+  height: 35px;
+  width: 40px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  border-style: dashed;
+  padding: 70px;
+  text-align: center;
+  color: #FBFBFC;
+}

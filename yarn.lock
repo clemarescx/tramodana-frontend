@@ -953,6 +953,10 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bootstrap@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
+
 bpmn-font@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/bpmn-font/-/bpmn-font-0.8.0.tgz#85b18715faede345cd33c8a48f50bbe557ff76c2"

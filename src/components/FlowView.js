@@ -16,10 +16,10 @@ componentWillReceiveProps(nextProps) {
   this.setState({diagramXML: nextProps.diagramXML});
   if (this.state.diagramXML)
   {
-      console.log('diagram not null!');
-      this.viewer.destroy();
-      this.viewer = new BpmnViewer({container: '#'+this.generateId});
-      this.importXML(this.state.diagramXML, this.viewer);
+    console.log('diagram not null!');
+    this.viewer.destroy();
+    this.viewer = new BpmnViewer({container: '#'+this.generateId});
+    this.importXML(this.state.diagramXML, this.viewer);
   }
   //}
 }
