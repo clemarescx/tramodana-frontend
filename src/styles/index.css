@@ -65,7 +65,11 @@ input[type="file"] {
 
 label {
   border-style: dashed;
-  padding: 70px;
+  padding: 90px;
   text-align: center;
   color: #FBFBFC;
+}
+
+label:hover {
+  color: #FB674A;
 }
