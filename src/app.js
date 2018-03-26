@@ -1,43 +1,63 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import AppRouter, { history } from './routers/AppRouter';
-import configureStore from './store/configureStore';
-import { login, logout } from './actions/auth';
-import 'normalize.css/normalize.css';
-//import './styles/styles.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/index.css';
-import { firebase } from './firebase/firebase';
-import LoadingPage from './components/LoadingPage';
+import React, {Component} from 'react';
+import FlowView from './FlowView';
+import logo from './logo.svg';
+import './App.css';
 
-const store = configureStore();
-const jsx = (
-  <Provider store={store}>
-    <AppRouter />
-  </Provider>
-);
+class App extends Component {
 
-let hasRendered = false;
-const renderApp = () => {
-  if (!hasRendered) {
-    ReactDOM.render(jsx, document.getElementById('app'));
-    hasRendered = true;
-  }
-};
-
-ReactDOM.render(<LoadingPage />, document.getElementById('app'));
-
-firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
-    store.dispatch(login(user.uid));
-    renderApp();
-    if (history.location.pathname === '/') {
-      history.push('/dashboard');
+    constructor() {
+        super();
+        this.openFile = this.openFile.bind(this);
+        this.state ={
+            changeCount: 0,
+            fileLoaded: false,
+            fileContent: null
+        };
     }
-  } else {
-    store.dispatch(logout());
-    renderApp();
-    history.push('/');
-  }
-});
+
+
+    render() {
+        console.log(`fileLoaded:${this.state.fileLoaded} `);
+        const flowview = this.state.fileLoaded ?
+            (<FlowView diagram={this.state.fileContent} containerId="canvas"/>):
+            (<p>No file loaded</p>);
+
+        return (<div className="App">
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo"/>
+                <h1 className="App-title">Welcome to React</h1>
+            </header>
+            <p className="App-intro">
+                To get started, edit <code>src/App.js</code> and save to reload.
+            </p>
+            <input type="file" id="file_opener" ref="fileOpener" onChange={this.openFile}/>
+            {flowview}
+        </div>);
+    }
+
+    openFile(e) {
+
+        const reader = new FileReader();
+
+        reader.onload = () => {
+            let newState = this.state;
+            const text = reader.result;
+           if(text){
+            console.log('File content loaded: ');
+            console.log( text.substring(0, 50) );
+            newState.fileContent = text;
+            newState.fileLoaded = true;
+           } else {
+               newState.fileLoaded = false;
+           }
+
+           newState.changeCount++;
+            this.setState(newState);
+        };
+
+        reader.readAsText(e.target.files[0]);
+        console.log('changed!' + this.state.changeCount);
+    }
+}
+
+export default App;
