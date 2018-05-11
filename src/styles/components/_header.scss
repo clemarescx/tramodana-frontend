@@ -1,18 +1,31 @@
-.header {
-  background: $dark-blue;
+.header-toolbar{
+    background: $tramodana-black;
+    height: 4em;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.8;
+    transition: all 200ms ease;
 }
 
-.header__content {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: $s-size 0;
+.header-toolbar:hover{
+    opacity: 1;
 }
 
-.header__title {
-  color: white;
-  text-decoration: none;
-  h1 {
-    margin: 0;
-  }
+.header-icon{
+    color: $tramodana-blue;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.header-option{
+    padding: 2em;
+    color: $tramodana-white;
+}
+
+.header-option:hover{
+    padding: 2em;
+    color: $tramodana-blue;
 }

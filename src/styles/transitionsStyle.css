@@ -1,0 +1,109 @@
+/*
+  This file contains the animations linked to CSSTransitionsGroup
+*/
+
+/*START FADE*/
+  
+.fade-appear {
+    opacity: 0.01;
+  }
+  
+  .fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+  }
+  
+  
+  .fade-enter {
+    opacity: 0.01;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .fade-leave {
+    opacity: 1;
+  }
+  
+  .fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+
+/*END FADE*/
+
+/*START SLIDE TOP*/
+  
+  .slideTop-appear {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  
+  .slideTop-appear.slideTop-appear-active {
+    opacity: 1;
+    transition: all .5s ease-in;
+    transform: translateY(0%);
+  }
+  
+  .slideTop-enter {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  
+  .slideTop-enter.slideTop-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+    transform: translateY(0%);
+  }
+  
+  .slideTop-leave {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .slideTop-leave.slideTop-leave-active {
+    opacity: 0.01;
+    transition: all 300ms ease-in;
+    transform: translateX(-100%);
+  }
+
+  /*END SLIDE TOP*/
+
+  /*START SLIDE BOTTOM*/
+  
+  .slideBottom-appear {
+    opacity: 0.01;
+    transform: translateY(100%);
+  }
+  
+  .slideBottom-appear.slideBottom-appear-active {
+    opacity: 1;
+    transition: all .5s ease-in;
+    transform: translateY(0%);
+  }
+  
+  .slideBottom-enter {
+    opacity: 0.01;
+    transform: translateY(100%);
+  }
+  
+  .slideBottom-enter.slideBottom-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+    transform: translateY(0%);
+  }
+  
+  .slideBottom-leave {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .slidebottom-leave.slideBottom-leave-active {
+    opacity: 0.01;
+    transition: all 300ms ease-in;
+    transform: translateX(100%);
+  }
+
+  /*END SLIDE BOTTOM*/

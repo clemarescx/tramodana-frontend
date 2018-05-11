@@ -1,21 +1,21 @@
-// Colors
-$dark-grey: #333;
+html {
+    font-size: 62.5%;
+    
+}
 
-$grey: #666;
+:root{
+    --mdc-theme-primary: #FB674A;
+}
 
-$blue: #78D4F3;
+button:disabled {
+    cursor: default;
+}
+  
+.disable-hover {
+   pointer-events: none;
+}
+  
+.pointer{
+   cursor: pointer;
+}
 
-$dark-blue: #2C2F37;
-
-$off-white: #FBFBFC;
-
-// Font Size
-$font-size-large: 1.8rem;
-$font-size-small: 1.4rem;
-
-// Spacing
-$s-size: 1.2rem;
-$m-size: 1.6rem;
-$l-size: 3.2rem;
-$xl-size: 4.8rem;
-$desktop-breakpoint: 45rem;

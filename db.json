@@ -1,0 +1,136 @@
+{
+  "lists": [
+    {
+      "id": 3,
+      "title": "Movies",
+      "items": [
+        {
+          "id": 1,
+          "item": "Avengers"
+        },
+        {
+          "id": 2,
+          "item": "Fight Club"
+        },
+        {
+          "id": 3,
+          "item": "Star Wars"
+        },
+        {
+          "id": 4,
+          "item": "Amadeus"
+        },
+        {
+          "id": 5,
+          "item": "Skyfall"
+        },
+        {
+          "id": 14,
+          "item": "Dr. No"
+        }
+      ],
+      "mainlist": "true"
+    },
+    {
+      "id": 4,
+      "title": "JS Libraries",
+      "items": [
+        {
+          "id": 1,
+          "item": "jQuery UI"
+        },
+        {
+          "id": 2,
+          "item": "Material UI"
+        },
+        {
+          "id": 3,
+          "item": "AnimeJS"
+        },
+        {
+          "id": 4,
+          "item": "SVGJS"
+        },
+        {
+          "id": 17,
+          "item": "Moments.js"
+        },
+        {
+          "id": 5,
+          "item": "ScrollReveal"
+        }
+      ],
+      "mainlist": "false"
+    },
+    {
+      "id": 5,
+      "title": "Nothing here",
+      "items": [],
+      "mainlist": "false"
+    },
+    {
+      "id": 6,
+      "title": "Shopping List",
+      "items": [
+        {
+          "id": 1,
+          "item": "milk"
+        },
+        {
+          "id": 2,
+          "item": "bread"
+        },
+        {
+          "id": 3,
+          "item": "newspaper"
+        },
+        {
+          "id": 4,
+          "item": "chocolate"
+        },
+        {
+          "id": 5,
+          "item": "new socks"
+        },
+        {
+          "id": 6,
+          "item": "white t-shirt"
+        },
+        {
+          "id": 7,
+          "item": "ham"
+        },
+        {
+          "id": 8,
+          "item": "juice"
+        },
+        {
+          "id": 9,
+          "item": "vodka"
+        }
+      ],
+      "mainlist": "false"
+    },
+    {
+      "id": 8,
+      "title": "Work",
+      "items": [
+        {
+          "id": 9,
+          "item": "Lots"
+        }
+      ],
+      "mainlist": "false"
+    }
+  ],
+  "listOfTheDay": [
+    {
+      "id": 221,
+      "item": "Avengers"
+    },
+    {
+      "id": 2,
+      "item": "Fight Club"
+    }
+  ]
+}

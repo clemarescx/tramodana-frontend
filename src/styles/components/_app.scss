@@ -1,0 +1,21 @@
+.app {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+    background: $tramodana-black;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    position: absolute;
+    z-index: -2;
+    padding-top: 5em;
+}
+
+p, .stateless-h1, .stateless-h3{
+    color: $tramodana-white;
+}
+
+.stateless-container{
+    margin-top: 2em;
+    background-color: $tramodana-black;
+}

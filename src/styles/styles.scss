@@ -1,16 +1,9 @@
 @import './base/settings';
 @import './base/base';
-
-// @import './components/box-layout';
-// @import './components/button';
-// @import './components/header';
-// @import './components/content-container';
-// @import './components/page-header';
-// @import './components/input-group';
-// @import './components/inputs';
-// @import './components/form';
-// @import './components/visibility';
-// @import './components/list';
-// @import './components/loader';
-
-@import './components/Support';
+@import './components/app';
+@import './components/header';
+@import './components/menu';
+@import './components/dashboard';
+@import './components/_greeting';
+@import '../../node_modules/material-components-web/dist/material-components-web.min.css';
+@import '~bootstrap/scss/bootstrap';

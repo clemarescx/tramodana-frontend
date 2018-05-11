@@ -1,0 +1,35 @@
+.greeting{
+    background-color: $tramodana-black;
+    color: $tramodana-black;
+}
+
+.greeting-h1{
+    font-weight: 900;
+    color: $tramodana-blue;
+    padding-top: 5em;
+    font-size: 1.3em;
+}
+
+.greeting-h3{
+    font-weight: 200;
+    color: $tramodana-white;
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+.greeting-p{
+    color: $tramodana-white;
+    font-size: 0.8em;
+}
+
+.check-icon{
+    color: $tramodana-red;
+}
+
+.greeting-button{
+    margin: 3em;
+    font-size: 1.6em;
+    font-weight: 200;
+    width: 6em;
+    height: 1.5em;
+}
