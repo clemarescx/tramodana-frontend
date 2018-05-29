@@ -30,7 +30,6 @@ class Dashboard extends Component {
   }
 
   openFile(e) {
-    //This is fucked up yooo
     const reader = new FileReader();
 
     reader.onload = () => {
@@ -42,7 +41,6 @@ class Dashboard extends Component {
 
     reader.readAsText(e.target.files[0]);
     console.log("this is the state from dashboard: " + this.state.fileContent)
-    this.renderFlowView();
   }
 
 }
